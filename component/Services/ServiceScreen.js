@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#eee',
   },
   serviceImage: {
-    width: 300,
-    height: 300,
+    width: 140,
+    height: 140,
     borderRadius: 40,
     marginBottom: 10,
   },

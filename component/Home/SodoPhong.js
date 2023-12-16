@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, ScrollView } from 'react-native';
 import { Colors } from '../../assets/themes';
 
 const SodoPhong = ({ onPress }) => {
@@ -12,6 +12,7 @@ const SodoPhong = ({ onPress }) => {
 
   renderItem = ({ item }) => <Item item={item} onPress={onPress} />;
   return (
+  
     <View>
       <View style={styles.header}>
         <Text style={styles.titleList}>Sơ đồ phòng trống mới</Text>
@@ -25,6 +26,7 @@ const SodoPhong = ({ onPress }) => {
           contentContainerStyle={styles.flatListContainer}
         />
     </View>
+    
   );
 };
 
@@ -49,7 +51,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   roomContainer: {
-    width: '48%', // Adjusted width for two columns
+    width: '45%', // Adjusted width for two columns
     height: 200,
     padding: 15,
     marginBottom: 10,
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 10,
     borderRadius: 15,
-    width: '40%',
+    width: '80%',
     fontSize: 20,
     marginBottom: 10
   },

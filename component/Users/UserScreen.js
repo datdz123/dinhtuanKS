@@ -10,8 +10,8 @@ import { Linking } from 'react-native';
 
 const userData = {
   id: 1,
-  name: 'John Doe',
-  email: 'john.doe@example.com',
+  name: 'Đinh Tuấn',
+  email: 'Tuandeptrai123@gmail.com',
   phoneNumber: '123-456-7890',
   imgUrl: require('../../assets/hero1.jpg'),
 };
@@ -104,18 +104,18 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   userInfoContainer: {
-    padding: 16,
+    padding: 10,
   },
   avatar: {
-    width: 150,
-    height: 150,
+    width: 100,
+    height: 100,
 
     borderRadius: 100,
 
   },
   sectionTitle1t: {
     width: '100%',
-    fontSize: 35,
+    fontSize: 25,
     fontWeight: 'bold',
 
     flexDirection: 'row',
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   },
   sectionTitlet: {
     width: '100%',
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 'bold',
 
     flexDirection: 'row',
@@ -132,15 +132,15 @@ const styles = StyleSheet.create({
   },
   sectionTitle1: {
     width: '100%',
-    fontSize: 35,
+    fontSize: 25,
     fontWeight: '500',
     color: 'white',
     backgroundColor: Colors.main,
-    padding: 30,
+    padding: 10,
 
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 80
+    marginBottom: 40
   },
   sectionTitle: {
     width: '100%',
@@ -149,11 +149,11 @@ const styles = StyleSheet.create({
     color: '#333',
     marginBottom: 0,
     backgroundColor: Colors.main,
-    padding: 30,
+    padding: 10,
     textAlign: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20
+    marginBottom: 10
   },
   sectionTitleText: {
     flex: 1,

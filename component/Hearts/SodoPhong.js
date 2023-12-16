@@ -1,12 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Colors } from '../../assets/themes';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const SodoPhong = ({ selectedFloor, onPress }) => {
   const data = generateRoomData(selectedFloor);
 
   renderItem = ({ item }) => <Item item={item} onPress={onPress} />;
   return (
+    <ScrollView
+    
+    >
     <View>
       <View style={styles.header}>
         <Text style={styles.titleList}>Danh sách phòng trống</Text>
@@ -19,6 +23,7 @@ const SodoPhong = ({ selectedFloor, onPress }) => {
         contentContainerStyle={styles.flatListContainer}
       />
     </View>
+    </ScrollView> 
   );
 };
 
@@ -76,10 +81,12 @@ const styles = StyleSheet.create({
     color: 'white',
     padding: 10,
     borderRadius: 15,
-    width: '40%',
+    width: '70%',
     fontSize: 20,
     marginBottom: 10,
   },
+  // k trượt đc xuống hả
+
   roomText1: {
     padding: 10,
     fontSize: 18,

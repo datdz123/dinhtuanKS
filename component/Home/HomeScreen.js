@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import Header from './Header';
 import SearchHome from './SearchHome';
 import ListCard from './ListCard';
@@ -12,12 +12,14 @@ const HomeScreen = () => {
   const navigate = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
+      <ScrollView>
       <View style={styles.body}>
         <Header />
         <SearchHome />
         <ListCard onPress={(item) => navigate.navigate('Detail', {item})} />
         <SodoPhong onPress={() => navigate.navigate('Heart')}  />
       </View>
+      </ScrollView>
       <BottomBar />
     </SafeAreaView>
   );
